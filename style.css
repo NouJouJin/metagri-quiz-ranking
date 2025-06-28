@@ -1,0 +1,69 @@
+/* フォント設定 */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* 背景アニメーション */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #121822;
+}
+
+/* 表彰台カードの共通スタイル */
+.podium-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    width: 90%;
+    max-width: 320px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.podium-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px var(--glow-color, rgba(255, 255, 255, 0.2));
+}
+
+/* 順位ごとのスタイル */
+#rank-1 {
+    --glow-color: #facc15; /* gold */
+    border-color: #facc15;
+    transform: scale(1.1);
+    margin-bottom: 2rem;
+}
+#rank-2 {
+    --glow-color: #c0c0c0; /* silver */
+    border-color: #c0c0c0;
+}
+#rank-3 {
+    --glow-color: #cd7f32; /* bronze */
+    border-color: #cd7f32;
+}
+
+/* ランキングリストのスタイル */
+.list-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.list-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px);
+}
